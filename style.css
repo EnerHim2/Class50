@@ -4,7 +4,8 @@ body {
     font-family: 'Roboto Thin';
     background: rgba(0,54,112,1);
     background: -webkit-linear-gradient(left, rgba(0,54,112,1) 0%, rgba(73,155,234,1) 100%);
-    color: white;
+    background: -webkit-linear-gradient(left, #ff5100 0%, rgba(73,155,234,1) 100%);
+    color: #ffffff;
 }
 
 li {
