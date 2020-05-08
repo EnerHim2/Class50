@@ -48,7 +48,7 @@ a {
     margin-right: auto;
 }
 
-.contact-points figure {
+.contact-points .figure {
     display: inline-block;
     width: auto;
     margin: auto;
@@ -59,12 +59,45 @@ a {
     /* display: flex; */
 }
 
-.contact-points figure img {
+.contact-points .figure img {
 	border-radius: 50%;
 	width: 75px;
 	height: 75px;
 }
 
-figure img:hover {
-    filter: brightness(0.7);
+.figure img:hover {
+    filter: brightness(0.5);
+}
+
+.figure {
+    position: relative;
+}
+
+.figure p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+}
+
+.figure:hover p {
+    opacity: 100%;
+}
+
+.figure:hover img {
+    opacity: 50%;
+}
+
+a:visited {
+    color: black;   
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Chrome Firefox & Opera */
 }
